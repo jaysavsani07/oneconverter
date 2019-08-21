@@ -4,6 +4,11 @@ import 'package:oneconverter/landing.dart';
 
 void main() {
   runApp(new MyApp());
+  updateStatusBarColor();
+}
+
+/* Method for change Statusbar color*/ 
+void updateStatusBarColor() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.white,
@@ -18,7 +23,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
